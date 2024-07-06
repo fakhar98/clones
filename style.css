@@ -336,8 +336,19 @@ nav{
 }
 .image_content .text a{
     font-size: 30px;
-    margin: 4dvh;
     color: rgb(75, 201, 201)
+}
+.align{
+    display: flex;
+    align-items: center;
+}
+.ok{
+    display: block;
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
 }
 .ELT{
     display: flex;
@@ -597,6 +608,9 @@ footer .container .social_medias{
     gap: 50px;
     margin-top: 20px;
     padding-bottom: 20px;
+}
+ul{
+    list-style: none;
 }
 @media  screen and (max-width: 450px){
     body{
@@ -1093,7 +1107,9 @@ footer .container .social_medias{
         margin-top: 20px;
         padding-bottom: 20px;
     }
-    
+    ul{
+        list-style: none;
+    }
      
 }
  

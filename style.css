@@ -831,9 +831,8 @@ ul{
         opacity: 1; 
         transform: translateY(-10px); 
     }
-    
     .customers {
-        opacity: 0; 
+        opacity: 1; 
         transition: opacity 0.5s;
         transition-delay: 0.2s;
     }
@@ -841,7 +840,6 @@ ul{
         opacity: 1; 
         transform: translateY(-10px); 
     }
-    
     .TD {
         opacity: 0; 
         transition: opacity 0.5s;
@@ -1073,6 +1071,10 @@ ul{
         gap: 5px;
     
     }
+    .icon_textss *,h1{
+        display: flex;
+        text-align: center;
+    }
     footer{
         background-color: #1A1A1A;
         color: white;
@@ -1098,13 +1100,13 @@ ul{
         border-right: 0px;
     }
     footer .container h4{
-        font-size: 20px;
+        font-size: 13px;
         text-align: center;
     }
     footer .container .social_medias{
         display: flex;
         justify-content: center;
-        height: 40px;
+        height: 20px;
         gap: 50px;
         margin-top: 20px;
         padding-bottom: 20px;
@@ -1114,4 +1116,3 @@ ul{
     }
      
 }
- 

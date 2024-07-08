@@ -1,3 +1,6 @@
+*{
+    list-style: none;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -8,6 +11,7 @@ body{
     background-position: fixed;
     background-size: contain;
 }
+
 .logo a{
     color: white;
 }
@@ -33,7 +37,7 @@ nav{
     display: flex;
     align-items: center;
     background-color: transparent;
-    color: white;
+    position: relative;
 }
 .menu-icon {
     display: none;
@@ -41,7 +45,7 @@ nav{
     cursor: pointer;
 }
 .menu a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .menu a:hover {
@@ -49,28 +53,59 @@ nav{
     transition: .2s ease;
 }
 .menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; 
+    transition: left 0.3s ease;
 }
-.menu a{
-    color: black;
+.menu a {
+    color: rgb(0, 0, 0);
     font-size: 2rem;
+    text-decoration: none;
+    z-index: 1001; 
 }
-.menu-icon {
-        display: block;
+
+#check:checked ~ .menu {
+    left: 0;
 }
-.menu.show {
-        display: flex;
+
+#close:checked ~ .menu {
+    left: -120%;
 }
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + label {
+    background: url('/Pictures/checkbox_unchecked.jpg') no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+input[type='checkbox']:checked + label {
+    background: url('Pictures/checkbox_checked.jpg') no-repeat;
+    height: 50px;
+    width: 200px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
 .content{
     display: flex;
     align-items: center;
@@ -132,55 +167,6 @@ nav{
 a{
     transition: .3s all ease;
     text-decoration: none;
-}
-nav{
-    padding: 1rem;
-    display: flex;
-    margin-top: 80px;
-    gap: 1400px;
-    margin-left: 170px;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    color: white;
-}
-.menu-icon {
-    display: none;
-    font-size: 50px;
-    cursor: pointer;
-}
-.menu a {
-    color: white;
-    text-decoration: none;
-}
-.menu a:hover {
-    color: cyan;
-    transition: .2s ease;
-}
-.menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-}
-.menu a{
-    color: black;
-    font-size: 2rem;
-}
-.menu-icon {
-        display: block;
-}
-.menu.show {
-        display: flex;
 }
 .content{
     display: flex;
@@ -611,7 +597,29 @@ footer .container .social_medias{
 ul{
     list-style: none;
 }
-@media  screen and (max-width: 450px){
+@media only screen and (max-width: 480px) {
+    /* CSS rules for screens up to 480px wide */
+    .menu {
+        font-size: 1.5rem;
+    }
+}
+
+/* Standard smartphones */
+@media only screen and (max-width: 768px) {
+    /* CSS rules for screens up to 768px wide */
+    .menu {
+        font-size: 1.75rem;
+    }
+}
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 768px) {
+    /* CSS rules for screens up to 768px wide */
+    .menu {
+        font-size: 1.75rem;
+    }
+}
+
+@media  screen and (max-width: 750px){
     body{
         margin: 0px;
         padding: 0px;
@@ -640,19 +648,23 @@ ul{
     nav{
         display: flex;
         margin-top: 80px;
-        gap: 250px;
+        gap: 240px;
         margin-left: 10px;
+        padding: 0px;
     }
     .navbar {
         display: flex;
         align-items: center;
         background-color: transparent;
         color: white;
+        flex-direction: column;
     }
-    .menu-icon {
-        display: none;
-        font-size: 25px;
-        cursor: pointer;
+    ul.navbar{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu-icon img {
+      top: 0px;
     }
     .menu a {
         color: white;
@@ -663,21 +675,12 @@ ul{
         transition: .2s ease;
     }
     .menu {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-            background-color: #ffffff;
-            position: absolute;
-            top: 35px;
-            left: 0;
-            height: 100vh;
-            width: 100%;
-            padding: 10px;
-            text-align: center;
+        text-align: center;
     }
-    .menu a{
+    .menu li a{
         color: black;
         font-size: 2rem;
+        padding: 40px;
     }
     .menu-icon {
             display: block;

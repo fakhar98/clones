@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap" 
     rel="stylesheet">
+    
 </head>
 <body>
     <script src="script.js"></script>
@@ -19,17 +20,19 @@
         <div class="logo">
             <a href="index.html">Hepta</a>
         </div>
-        <div class="navbar">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon"><img src="images/hamburger.png" alt=""></label>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="#">Hotels</a>
-                <a href="#">About Us</a>
-                <a href="#">News</a>
-                <a href="#">Contact</a>
+                <a href="index.html"><img src="images/cancel.png" alt="cancel"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
-        </div>
+        </ul>
     </nav>
+    
     <div class="content">
         <div class="title">
             <h2>Travel & Tours</h2>

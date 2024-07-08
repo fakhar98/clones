@@ -297,7 +297,7 @@ a{
 }
 .TD.scrolled {
     opacity: 1; 
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
 }
 .image_content .L-image img{
     height: 600px;
@@ -426,8 +426,8 @@ a{
     font: 20px "Mukta Mahee", arial, sans-serif;
 }
 .main_div .image_slider{
-    width: 50%;
-    height: 500px;
+    width: 54%;
+    height: 520px;
     position: absolute;
     left: 50%;
     top: 600px;
@@ -454,9 +454,10 @@ a{
         background-image: url(https://preview.colorlib.com/theme/hepta/images/slider-5.jpg.webp);
     }
 }
+
 .RBP{
     background-color: #65C0BA;
-    margin-top: 610px;
+    margin-top: -4.7px;
 }
 .RBP .content{
     text-align: center;
@@ -971,7 +972,7 @@ ul{
     }
     .RBP{
         background-color: #65C0BA;
-        margin-top: 610px;
+        margin-top: -4.7px;
     }
     .RBP .content{
         text-align: center;

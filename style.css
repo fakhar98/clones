@@ -74,6 +74,7 @@ nav{
     font-size: 2rem;
     text-decoration: none;
     z-index: 1001; 
+    font-family: "Abril Fatface", times, serif;;
 }
 
 #check:checked ~ .menu {

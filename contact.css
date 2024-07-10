@@ -1,0 +1,530 @@
+*{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -100px ;
+    background-position: fixed;
+    background-size: contain;
+  
+}
+.logo a{
+    color: white;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: "Abril Fatface", times, serif;
+}
+a{
+    transition: .3s all ease;
+    text-decoration: none;
+}
+nav{
+    padding: 1rem;
+    display: flex;
+    margin-top: 80px;
+    gap: 1400px;
+    margin-left: 170px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+}
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu a:hover {
+    color: cyan;
+    transition: .2s ease;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; 
+    transition: left 0.3s ease;
+}
+.menu a {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-decoration: none;
+    z-index: 1001; 
+    font-family: "Abril Fatface", times, serif;;
+}
+
+#check:checked ~ .menu {
+    left: 0;
+}
+
+#close:checked ~ .menu {
+    left: -120%;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + label {
+    background: url('/Pictures/checkbox_unchecked.jpg') no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+input[type='checkbox']:checked + label {
+    background: url('Pictures/checkbox_checked.jpg') no-repeat;
+    height: 50px;
+    width: 200px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content .title{
+    color: white;
+    font: 60px "Abril Fatface", times, serif;
+    margin-top: 55px;
+}
+.content .title h2{
+    margin-bottom: 10px;
+}
+.content .title2{
+    color: white;
+    font: 30px "Abril Fatface", times, serif;
+    margin-top: 0px;
+}
+.container {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-left: 500px;
+    margin-top: 500px;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: 1px solid rgb(0, 221, 166);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: rgb(0, 221, 166);
+    color: white;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+.contact-details strong {
+    font-size: 18px;
+    color: rgb(0, 221, 166);
+}
+
+.customers {
+    opacity: 1; 
+    transition: opacity 0.5s;
+    transition-delay: 0.2s;
+}
+.customers.scrolled {
+    opacity: 1; 
+    transform: translateY(-10px); 
+}
+
+.HC {
+    opacity: 1; 
+    transition: opacity 0.5s;
+    transition-delay: 0.2s;
+}
+.HC.scrolled {
+    opacity: 1; 
+    transform: translateY(-10px); 
+}
+
+
+.HC{
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    font-size: 50px;
+    margin-top: 500px;
+}
+.HC h1{
+    margin: 0px;
+}
+.customers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgb(247, 247, 247);
+}
+.customers .c1 img{
+    height: 70px;
+    border-radius: 50%;
+}
+.customers .c2 img{
+    height: 70px;
+    border-radius: 50%;
+}
+.customers .c3 img{
+    height: 70px;
+    border-radius: 50%;
+}
+.customers .c1,.c2,.c3{
+    margin-top: 100px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer .containerF .row{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .containerF .row ul {
+    margin-top: 80px;
+}
+footer .containerF .row ul li{
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 100;
+}
+footer .containerF .row ul li input{
+    border: 1px 0px 0px 1px;
+    background-color: #1A1A1A;
+}
+footer .containerF h4{
+    font-size: 20px;
+    text-align: center;
+}
+footer .containerF .social_medias{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    gap: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+@media  screen and (min-width: 751px){
+    .contact-details2{display: none;}
+}
+@media  screen and (max-width: 750px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(images/bg_contact2.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 0px ; 
+        background-size: 100% 12%;
+    }
+    .logo a{
+        color: white;
+    }
+    .logo{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1;
+        font-family: "Abril Fatface", times, serif;
+    }
+    a{
+        transition: .3s all ease;
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        margin-top: 80px;
+        gap: 220px;
+        margin-left: 10px;
+        padding: 0px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        flex-direction: column;
+    }
+    ul.navbar{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu-icon img {
+      top: 0px;
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        color: cyan;
+        transition: .2s ease;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu li a{
+        color: black;
+        font-size: 1.45rem;
+    }
+    .menu-icon {
+            display: block;
+    }
+    .menu.show {
+            display: flex;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content .title{
+        color: white;
+        font: 30px "Abril Fatface", times, serif;
+        margin-top: 0x;
+    }
+    .content .title h2{
+        margin-bottom: 0px;
+    }
+    .content .title2{
+        color: white;
+        font: 14px "Abril Fatface", times, serif;
+        font-weight: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 800px;
+        width: 78%;
+        margin-left: 20px;
+        margin-top: 500px;
+    }
+    
+    .contact-form {
+        flex: 1;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .contact-form input, 
+    .contact-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .contact-form button {
+        padding: 10px;
+        border: 1px solid rgb(0, 221, 166);
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    .contact-form button:hover {
+        background-color: rgb(0, 221, 166);
+        color: white;
+    }
+    .contact-details{
+        display: none;
+    }
+    .contact-details2 {
+        flex: 1;
+    }
+    
+    .contact-details2 p {
+        margin: 0 0 20px 0;
+        font-size: 33px;
+        font-weight: 800;
+    }
+    
+    .contact-details2 strong {
+        font-size: 18px;
+        color: rgb(0, 221, 166);
+    }
+    .customers {
+        opacity: 1; 
+        transition: opacity 0.5s;
+        transition-delay: 0.2s;
+    }
+    .customers.scrolled {
+        opacity: 1; 
+        transform: translateY(-10px); 
+    }
+    
+    .HC {
+        opacity: 1; 
+        transition: opacity 0.5s;
+        transition-delay: 0.2s;
+    }
+    .HC.scrolled {
+        opacity: 1; 
+        transform: translateY(-10px); 
+    }
+    
+    
+    .HC{
+        text-align: center;
+        background-color: rgb(247, 247, 247);
+        font-size: 1.3rem;
+        margin-top: 500px;
+    }
+    .HC h1{
+        margin: 0px;
+    }
+    .customers{
+        display: grid;
+        justify-content: space-evenly;
+        background-color: rgb(247, 247, 247);
+    }
+    .customers .c1 img{
+        height: 70px;
+        border-radius: 50%;
+    }
+    .customers .c2 img{
+        height: 70px;
+        border-radius: 50%;
+    }
+    .customers .c3 img{
+        height: 70px;
+        border-radius: 50%;
+    }
+    .customers .c1,.c2,.c3{
+        margin-top: 100px;
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    footer{
+        background-color: #1A1A1A;
+        color: white;
+    }
+    footer .containerF .row{
+        display: grid;
+    }
+    footer .containerF .row ul {
+        margin-top: 80px;
+    }
+    footer .containerF .row ul li{
+        font-size: 22px;
+        margin: 00px;
+        font-weight: 100;
+    }
+    footer .containerF .row ul li input{
+        color: white;
+        font-style: italic;
+        text-align: center;
+        border-color: rgb(117, 117, 117);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    footer .containerF h4{
+        font-size: 13px;
+        text-align: center;
+    }
+    footer .containerF .social_medias{
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        gap: 50px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    ul{
+        list-style: none;
+    }
+     
+}

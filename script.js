@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       images.forEach(img => img.classList.remove('fade-in'));
     }
   });
-
   const sections = document.querySelectorAll('.image_content, .ELT, .icon_texts, .main_div, .RBP, .HC, .customers, .TD');
-
   window.addEventListener('scroll', function() {
     sections.forEach(function(section) {
       if (isInViewport(section)) {

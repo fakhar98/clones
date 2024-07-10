@@ -1,0 +1,409 @@
+*{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/bg_news.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -290px ;
+    background-position: fixed;
+    background-size: contain;
+  
+}
+.logo a{
+    color: white;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: "Abril Fatface", times, serif;
+}
+a{
+    transition: .3s all ease;
+    text-decoration: none;
+}
+nav{
+    padding: 1rem;
+    display: flex;
+    margin-top: 80px;
+    gap: 1400px;
+    margin-left: 170px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+}
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu a:hover {
+    color: cyan;
+    transition: .2s ease;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; 
+    transition: left 0.3s ease;
+}
+.menu a {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-decoration: none;
+    z-index: 1001; 
+    font-family: "Abril Fatface", times, serif;;
+}
+
+#check:checked ~ .menu {
+    left: 0;
+}
+
+#close:checked ~ .menu {
+    left: -120%;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + label {
+    background: url('/Pictures/checkbox_unchecked.jpg') no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+input[type='checkbox']:checked + label {
+    background: url('Pictures/checkbox_checked.jpg') no-repeat;
+    height: 50px;
+    width: 200px;
+    background-size: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content .title{
+    color: white;
+    font: 60px "Abril Fatface", times, serif;
+    margin-top: 55px;
+}
+.content .title h2{
+    margin-bottom: 0px;
+}
+.content .title2{
+    color: white;
+    font: 20px "Abril Fatface", times, serif;
+    margin-top: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 300px ;
+}
+.container .content_image{
+    display: grid;
+    grid-template-columns: repeat(2,0.2fr);
+    justify-content: center;
+    gap: 10px;
+    
+}
+#date{
+    font-size: 15px;
+    opacity: 0.5;
+}
+.container .content_image a{
+    border: 0.5px solid rgb(236, 234, 234);
+    box-shadow: 1px 1px 10px rgb(230, 230, 230);
+}
+.container .content_image a img{
+    height: 200px;
+}
+.container .content_image a p,h1{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.container .row{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid rgb(236, 234, 234);
+    box-shadow: 1px 1px 10px rgb(230, 230, 230);
+}
+.container .row p {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 20px;
+    
+}
+.container .row a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.container .row a img{
+    height: 120px;
+}
+.more_text{
+    display: flex;
+    flex-direction: column;
+}
+.container .row a p,h1{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+footer{
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer .containerF .row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+footer .containerF .row ul {
+    margin-top: 80px;
+}
+footer .containerF .row ul li{
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 100;
+}
+footer .containerF .row ul li input{
+    border: 1px 0px 0px 1px;
+    background-color: #1A1A1A;
+}
+footer .containerF h4{
+    font-size: 20px;
+    text-align: center;
+}
+footer .containerF .social_medias{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    gap: 50px;
+    margin-top: 20px;
+    padding-bottom: 340px;
+}
+ul{
+    list-style: none;
+}
+@media  screen and (max-width: 750px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(images/bg_news\ 2.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 0px ; 
+        background-size: 100% 12%;
+    }
+    .logo a{
+        color: white;
+    }
+    .logo{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1;
+        font-family: "Abril Fatface", times, serif;
+    }
+    a{
+        transition: .3s all ease;
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        margin-top: 80px;
+        gap: 220px;
+        margin-left: 10px;
+        padding: 0px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        flex-direction: column;
+    }
+    ul.navbar{
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu-icon img {
+      top: 0px;
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        color: cyan;
+        transition: .2s ease;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu li a{
+        color: black;
+        font-size: 1.45rem;
+    }
+    .menu-icon {
+            display: block;
+    }
+    .menu.show {
+            display: flex;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content .title{
+        color: white;
+        font: 30px "Abril Fatface", times, serif;
+        margin-top: 0x;
+    }
+    .content .title h2{
+        margin-bottom: 0px;
+    }
+    .content .title2{
+        color: white;
+        font: 14px "Abril Fatface", times, serif;
+        font-weight: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 300px ;
+    }
+    .container .content_image{
+        display: grid;
+        grid-template-columns: repeat(1,0.2fr);
+        justify-content: center;
+        gap: 10px;
+    }
+    #date{
+        font-size: 15px;
+        opacity: 0.5;
+    }
+    .container .content_image a{
+        border: 0.5px solid rgb(236, 234, 234);
+        box-shadow: 1px 1px 10px rgb(230, 230, 230);
+    }
+    .container .content_image a img{
+        height: 275px;
+    }
+    .container .content_image a p,h1{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+    .container .row{
+        display: flex;
+        flex-direction: column;
+        border: 0.5px solid rgb(236, 234, 234);
+        box-shadow: 1px 1px 10px rgb(230, 230, 230);
+    }
+    .container .row p {
+        font-size: 20px;
+        font-weight: 800;
+        margin-left: 20px;
+        
+    }
+    .container .row a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+    .container .row a img{
+        height: 120px;
+    }
+    .more_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .row a p,h1{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    footer{
+        background-color: #1A1A1A;
+        color: white;
+    }
+    footer .containerF .row{
+        display: grid;
+    }
+    footer .containerF .row ul {
+        margin-top: 80px;
+    }
+    footer .containerF .row ul li{
+        font-size: 22px;
+        margin: 00px;
+        font-weight: 100;
+    }
+    footer .containerF .row ul li input{
+        color: white;
+        font-style: italic;
+        text-align: center;
+        border-color: rgb(117, 117, 117);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    footer .containerF h4{
+        font-size: 13px;
+        text-align: center;
+    }
+    footer .containerF .social_medias{
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        gap: 50px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    ul{
+        list-style: none;
+    }
+     
+}
